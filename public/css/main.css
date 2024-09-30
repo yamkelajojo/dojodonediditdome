@@ -1,0 +1,135 @@
+:root {
+    --whitish-bg-color: #ebebeb;
+    --text-color: #0f0f0f;
+}
+
+p {
+    color: rgb(14, 14, 14);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--whitish-bg-color);
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    background-color: var(--whitish-bg-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    background-color: var(--whitish-bg-color);
+    color: var(--text-color);
+    box-shadow: 0px -3px 5px -1px rgba(50, 50, 93, 0.041),
+        0px -3px 3px -1px rgba(0, 0, 0, 0.096);
+    font-size: 0.7rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    padding-bottom: 3.8rem;
+    text-align: center;
+    background-color: var(--whitish-bg-color);
+    color: var(--text-color);
+    box-shadow: 0px 3px 5px -1px rgba(50, 50, 93, 0.048),
+        0px 3px 3px -1px rgba(0, 0, 0, 0.034);
+}
+
+.home-logo-container {
+    align-self: center;
+    justify-self: center;
+    object-fit: contain;
+    object-position: center;
+    width: 50%;
+    height: 50%;
+    box-shadow: blue 0px 0px 0px 2px inset,
+        rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+        rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+        rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+        rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.cover-image {
+    align-self: center;
+    justify-self: center;
+    width: 24rem;
+    height: 24rem;
+    box-shadow: blue 0px 0px 0px 2px inset,
+        rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+        rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+        rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+        rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.albums-header {
+    padding: 2rem;
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 7rem 5rem;
+    padding: 1rem 5rem;
+}
+
+.navbar > .logo-text {
+    font-size: 4rem;
+}
+
+.album {
+    width: 15rem;
+    box-sizing: border-box;
+    height: auto;
+    box-shadow: rgba(38, 57, 77, 0.668) 0px 20px 30px -10px;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.album:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(38, 57, 77, 0.668) 0px 35px 45px -17px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.1rem;
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+}
+
+.album p {
+    margin: 0.3rem 0;
+}
+
+.album-details {
+    padding: 0rem 1rem;
+}
+
+/* ------------------------------------------------------------------------------ */
