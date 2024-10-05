@@ -8,4 +8,6 @@ Route::get('/', function () {
 });
 
 Route::get('/albums', [AlbumController::class, 'index']);
+Route::get('albums/create', [AlbumController::class, 'create']);
+Route::post('albums', [AlbumController::class, 'store']);
 Route::get('/albums/{id}', [AlbumController::class, 'show']);

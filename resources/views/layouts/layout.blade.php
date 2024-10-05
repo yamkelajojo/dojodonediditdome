@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="/css/fancytext.css">
 
     </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+    <body class="font-sans antialiased  dark:text-white/50">
         @if(!Request::is('/'))
         <header>
             <nav class="navbar"><div class="logo-text">DojoDoneDidItDome</div></nav>

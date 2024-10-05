@@ -1,7 +1,11 @@
 @extends('layouts.layout')
 @section('content')
 <div class="content" style="border: 1px rgb(75, 18, 87) solid; width: 100%; text-align: center;">
-
+@if (session('message'))
+    <div class="alert alert-success">
+        {{ session('message') }}
+    </div>
+@endif
     <img class="cover-image" src="/images/SANDAS.jpg" alt="sandas art">  
 
     {{-- <div class="lightning">

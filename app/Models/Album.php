@@ -11,9 +11,6 @@ class Album extends Model
 
     protected $table = 'albums';
 
-    protected $fillable = [
-        'album_name',
-        'artist',
-        'album_cover'
-    ];
+    protected $fillable = ['album_name', 'artist', 'album_cover', 'year'];
+
 }

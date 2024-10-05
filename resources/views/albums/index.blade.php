@@ -3,6 +3,12 @@
     <div class="albums-header">
         <h1 style="text-align: center;" class="">Albums</h1>
     </div>
+
+    <div>
+        <button class='button'>
+            <a href="/albums/create">Create an Album</a>
+        </button>
+    </div>
     @if ($albums->isEmpty())
         <p>No albums available.</p>
     @else
@@ -16,6 +22,7 @@
                     {{-- <p>{{$loop -> index + 1}}</p> --}}
                     <p>{{$album->album_name}}</p>
                     <p>{{$album->artist}}</p>
+                    <p>{{$album->year}}</p>
                 </div>
             </div>
         @endforeach
