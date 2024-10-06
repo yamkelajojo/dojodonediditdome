@@ -7,6 +7,12 @@ use App\Models\Album;
 
 class AlbumController extends Controller
 {
+
+    //this constructor line siyifake long after the ones we created below. its basically making all the functions below use the ->middleware thing instead oh putting it in ieach line 1 by 1 in the web.php file at the end of each route
+    // public function __construct(){
+    //     this->middleware(auth);
+    // }
+
     public function index()
     {
         // $albums = Album::all();

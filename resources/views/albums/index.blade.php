@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 @section('content')
     <div class="albums-header">
         <h1 style="text-align: center;" class="">Albums</h1>
@@ -6,7 +6,7 @@
 
     <div>
         <button class='button'>
-            <a href="/albums/create">Create an Album</a>
+            <a href="{{route('albums.create')}}">Create an Album</a>
         </button>
     </div>
     @if ($albums->isEmpty())

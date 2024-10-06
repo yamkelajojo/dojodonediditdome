@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 @section('content')
 <div class="content" style="border: 1px rgb(75, 18, 87) solid; width: 100%; text-align: center;">
 @if (session('message'))
